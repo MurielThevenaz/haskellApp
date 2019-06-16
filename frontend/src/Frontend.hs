@@ -15,9 +15,9 @@ import Obelisk.Generated.Static
 
 frontend :: Frontend (R FrontendRoute)
 frontend = Frontend
-  { _frontend_head = el "title" $ text "Obelisk Minimal Example"
+  { _frontend_head = el "title" $ text "Test App"
   , _frontend_body = do
-      text "Welcome to Obelisk!"
+      text "Welcome to my test!"
       el "p" $ text $ T.pack commonStuff
-      elAttr "img" ("src" =: static @"obelisk.jpg") blank
+      elAttr "img" ("src" =: static @"haskell.png") blank
   }
